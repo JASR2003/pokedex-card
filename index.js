@@ -35,7 +35,7 @@ const crearCard = (pokemon) => {
   const flex = document.querySelector('.flex');
   const template = document.getElementById('template-card').content;
   const clone = template.cloneNode(true);
-  const fragment = document.createDocumentFragment() 
+  const fragment = document.createDocumentFragment()
 
   clone.querySelector('.card-header-img').setAttribute('src' , pokemon.img);
   clone.querySelector('.card-title').innerHTML = `${pokemon.nombre} <span>${pokemon.hp} hp</span>`;
